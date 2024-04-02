@@ -30,12 +30,12 @@ export default function Home() {
         <Header />
         <Banner />
         <About />
-        <Community />
         <Plans />
         <Solutions />
         <Functionalities />
         <OurServices />
         <ACode />
+        <Community />
         <Footer />
 
       </main>
