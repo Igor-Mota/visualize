@@ -44,7 +44,7 @@ export default function Header() {
                                     <Link className='navLink' href='#solutions'>Soluções</Link>
                                 </li>
                                 <li>
-                                    <Link className='navLink' href='#code'>Code Sistemas</Link>
+                                    <Link className='navLink' href='#Acode'>Code Sistemas</Link>
                                 </li>
                                 <li>
                                     <Link className='navLink' href='#functionalities'>Funcionalidades</Link>

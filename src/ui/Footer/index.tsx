@@ -57,34 +57,6 @@ export default function Footer() {
                             <p>31 93144260</p>
 
                         </div>
-                        <div className={styles.comments}>
-                            <Swiper
-                                spaceBetween={50}
-                                slidesPerView={1}
-                                onSlideChange={() => console.log('slide change')}
-                                onSwiper={(swiper) => console.log(swiper)}
-                            >
-                                {comments.map(item => {
-                                    return (
-                                        <SwiperSlide key={item?.id}>
-                                            <div className={styles.card}>
-                                                <div className={styles.comment}>
-                                                    <p>
-                                                        {item.text}
-                                                    </p>
-                                                </div>
-                                                <div className={styles.people}>
-                                                    <div className={styles.peopleText}>
-                                                        <h4>{item.name}</h4>
-                                                        <p>{item.function}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
-                                    )
-                                })}
-                            </Swiper>
-                        </div>
                     </div>
                 </div>
             </div>

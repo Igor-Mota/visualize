@@ -8,7 +8,7 @@ const linksInMenu = [
     {name:'Home', to:'#banner'},
     {name:'Segmento', to:'#about'},
     {name:'Soluções',to:'#solutions'},
-    {name:'Code Sistemas',to:'#code'},
+    {name:'Code Sistemas',to:'#Acode'},
     {name:'Funcionalidades',to:'#functionalities'},
     {name:'Contato',to:'#contact'}
 ]

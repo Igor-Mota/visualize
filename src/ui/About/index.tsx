@@ -141,7 +141,7 @@ export default function About() {
                 {/* <Image src='/images/content.png' alt='Connect' fill quality={100} /> */}
               </div>
               <div className={styles.text}>
-                <h3 className={poppinsNormal.className}>Outros</h3>
+                <h3 className={poppinsNormal.className}>Comercio em Geral</h3>
                 {/*<p className={poppinsNormal.className}>There are many variations of passages of Lorem Ipsum available, in </p>*/}
               </div>
             </div>
