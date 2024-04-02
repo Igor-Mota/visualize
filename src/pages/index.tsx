@@ -30,8 +30,8 @@ export default function Home() {
         <Header />
         <Banner />
         <About />
-        <Plans />
         <Community />
+        <Plans />
         <Solutions />
         <Plans />
         <Functionalities />
