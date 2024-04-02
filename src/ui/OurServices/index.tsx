@@ -4,19 +4,10 @@ import { useEffect, useState } from 'react';
  
 export default function OurServices (){
     const [ indexAccordion, setIndexAccordion ] = useState(0)
-    const [ isImage, setIsImage ] = useState('/images/design.png')
     const toggleAccordion = (index:any) => {
+        
         if(index == null) return
-        setIndexAccordion(index)
-        if(index == 0) {
-            setIsImage('/images/design.png')
-        }
-        if(index == 1) {
-            setIsImage('/images/customize.png')
-        }
-        if(index == 2) {
-            setIsImage('/images/layouts.jpg')
-        }
+        setIndexAccordion(index) 
     }
     useEffect(()=>{
         console.log(indexAccordion)
@@ -26,28 +17,41 @@ export default function OurServices (){
             <div className="container">
                 <div className={styles.content}>
                     <div className={styles.title}>
-                        <h2>What Sofbox can do for you?</h2>
-                        <p>If you are planning on developing a product landing </p>
+                        <h2>Seja um revendedor</h2>
+                        <p>Cadastre se e seja um revendedor trabalhe de casa. Em poucos dias você recebe treinamento e sua empresa está pronta para revender a melhor solução do mercado! </p>
                     </div>
-                    <div className={styles.row}>
-                        <div className={styles.image}>
-                            <img src={isImage} alt="" />
+                    <div className='d-flex flex-column flex-md-row'>
+                        <div className='w-100 me-0 me-md-3 d-flex align-items-center align-items-md-start justify-content-center'>
+                        <form className='d-flex flex-column w-100 w-md-75 mb-4 mb-md-0'> 
+                                <input className='w-100 m-1' type="name" name="name" id="name" placeholder='Seu Nome'/>
+                                <input className='w-100 m-1' type="phone" name="phone" id="phone" placeholder='Seu Telefone'/>
+                                <input className='w-100 m-1' type="city" name="city" id="city" placeholder='Sua Cidade'/>
+                                <button className="btn default w-100 mt-2">Cadastrar</button>
+                            </form>
                         </div>
                         <div className={styles.accordion}>
                             <Accordion activeIndex={indexAccordion} onTabChange={(e:any) => toggleAccordion(e?.index)} className='accordionOurServices'>
-                                <AccordionTab header="Unique Design">
+                                <AccordionTab header="Software PDV com sua marca">
+
+                                </AccordionTab>
+                                <AccordionTab header=" Fature seu cliente ">
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                </p>
+                                </AccordionTab>
+                                <AccordionTab header="Produto completo e pronto para venda ">
+                                    <p>
                                     </p>
                                 </AccordionTab>
-                                <AccordionTab header="Easy to Customize">
+                                <AccordionTab header="Margem de lucro saudável">
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                                     </p>
                                 </AccordionTab>
-                                <AccordionTab header="Multipurpose layout">
+                                <AccordionTab header="Treinamento da sua equipe Comercial.">
                                     <p>
-                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                    </p>
+                                </AccordionTab>
+                                <AccordionTab header="Liberdade e Autonomia.">
+                                    <p>
                                     </p>
                                 </AccordionTab>
                             </Accordion>

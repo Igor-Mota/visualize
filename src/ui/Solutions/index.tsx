@@ -40,9 +40,9 @@ export default function Solutions() {
                 Soluções ERP que tornem a sua empresa mais produtiva e com processos
                 mais autônomos.
             </h4>
-            <div>
+            <div>   
                 <div className="row">
-                    <div className="col-12 mt-2 col-md-6 position-relative">
+                    <div className="col-12 mt-2 col-md-4 position-relative">
                         <Card isFlipped={isFlippedFirst} >
                             <div className={`${styles.card} up-face card`}>
                                 <h6 style={{ fontSize: 22 }} className="font-weight-bold">
@@ -77,7 +77,7 @@ export default function Solutions() {
                             </div>
                         </Card>
                     </div>
-                    <div className="col-12 mt-2 col-md-6 position-relative">
+                    <div className="col-12 mt-2 col-md-4 position-relative">
                         <Card isFlipped={isFlippedSecond} >
                             <div className={`${styles.card} up-face card`}>
                                 <h6 style={{ fontSize: 22 }} className="font-weight-bold">
@@ -89,14 +89,14 @@ export default function Solutions() {
                                     width={isMobile ? 250 : 250}
                                     height={isMobile ? 200 : 200}
                                 />
-                                <p style={{ color: "#000" }}>
+                                <p  className="text-center w-100"  style={{ color: "#000" }}>
                                 De um jeito simples e descomplicado, nosso sistema promove a experiência ágil que você precisa. Por módulos básicos padronizados conforme necessários.                                 </p>
                                 <a onClick={flipSecondCard} href="#">
                                     Siba mais
                                 </a>
                             </div>
                             <div className={`${styles.card} ${styles.back_face} card`}>
-                                <p  style={{ color: "#000" }}>
+                                <p  className="text-start" style={{ color: "#000" }}>
                                 Quando se compreende de comércios, sabemos como podemos ajudar a administrar o seu negócio – nas compras, vendas, estoque, financeiro e obrigações fiscais, fazemos acontecer.
                                 Acompanhe o dia a dia com um software solução desenvolvida para atender diversas áreas capaz de se adaptar as atividades cotidianas. 
                                 Recurso ponto de venda PDV. Conte com um sistema fácil de usar, feito para você tornar o seu atendimento ágil, diminuir as filas e encantar os clientes. 
@@ -107,7 +107,7 @@ export default function Solutions() {
                             </div>
                         </Card>
                     </div>
-                    <div className="col-12 mt-2 col-md-6 position-relative">
+                    <div className="col-12 mt-2 col-md-4 position-relative">
                         <Card isFlipped={isFlippedThird} >
                             <div className={`${styles.card} up-face card`}>
                                 <h6 style={{ fontSize: 22 }} className="font-weight-bold">
@@ -119,14 +119,14 @@ export default function Solutions() {
                                     width={isMobile ? 250 : 250}
                                     height={isMobile ? 200 : 200}
                                 />
-                                <p style={{ color: "#000" }}>
+                                <p className="text-center" style={{ color: "#000" }}>
                                 Sistemas multi empresas multi filiais, totalmente modular. Conte com um sistema de gestão completo e integrado, capaz de atender empresas de diferentes portes e segmentos, que te ajuda a potencializar resultados e agilizar processos.                                </p>
                                 <a onClick={flipThirdCard} href="#">
                                     Siba mais
                                 </a>
                             </div>
                             <div className={`${styles.card} ${styles.back_face} card`}>
-                                <p  style={{ color: "#000" }}>
+                                <p className="text-center" style={{ color: "#000" }}>
                                 Gerencie de qualquer lugar sua empresa obtenha dados, realize conciliação bancária emita documentos fiscais acompanhe as vendas.
                                 Automatize todos os fluxos operacionais da sua empresa e tenha processos internos dinâmicos e mais produtivos, deixando com que as pessoas foquem em gerar resultado para o seu negócio.
                                 Controle estoque vendas, cozinhas, financeiro contas a pagar receber, emissão de documentos fiscais, pedidos, delivery, cadastro diversos, ecommerce.

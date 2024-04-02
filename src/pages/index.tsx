@@ -6,6 +6,7 @@ import Plans from '@/ui/Plans'
 import Solutions from '@/ui/Solutions'
 import Community from '@/ui/Community'
 import Functionalities from '@/ui/Functionalities'
+import OurServices from '@/ui/OurServices'
 import Footer from '@/ui/Footer'
 import Header from '@/ui/Header'
 
@@ -31,8 +32,11 @@ export default function Home() {
         <Plans />
         <Community />
         <Solutions />
+        <Plans />
         <Functionalities />
+        <OurServices />
         <Footer />
+
       </main>
     </>
   )
