@@ -32,7 +32,7 @@ export default function Functionalities() {
                         <div className="col-12 col-md-5 ms-0 ms-md-5 mt-2 mb-2">
                             <div
                                 className={`${styles.card} card  `}
-                                onClick={() => handleChangeTab(1)}
+                                onMouseEnter={() => handleChangeTab(1)}
                             >
                                 <h6 style={{fontSize:22}} >Planos Sistema ERP</h6>
 
@@ -60,7 +60,7 @@ export default function Functionalities() {
                         <div className="col-12 col-md-5 mt-2 mt-2 mb-2">
                             <div
                                 className={`${styles.card} card `}
-                                onClick={() => handleChangeTab(2)}
+                                onMouseEnter={() => handleChangeTab(2)}
                             >
                                 <h6 style={{fontSize:22}}>Contrate o nosso Sistema ERP</h6>
                                 <Image
