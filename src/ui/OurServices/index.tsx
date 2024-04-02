@@ -26,6 +26,9 @@ export default function OurServices (){
                                 <input className='w-100 m-1' type="name" name="name" id="name" placeholder='Seu Nome'/>
                                 <input className='w-100 m-1' type="phone" name="phone" id="phone" placeholder='Seu Telefone'/>
                                 <input className='w-100 m-1' type="city" name="city" id="city" placeholder='Sua Cidade'/>
+                                <input className='w-100 m-1' type="text" name="state" id="state" placeholder='Seu Estado'/>
+                                <input className='w-100 m-1' type="email" name="email" id="mailer" placeholder='Seu Email'/>
+                                <input className='w-100 m-1' type="text" name="ocup" id="ocup" placeholder='Sua Ocupação'/>
                                 <button className="btn default w-100 mt-2">Cadastrar</button>
                             </form>
                         </div>
