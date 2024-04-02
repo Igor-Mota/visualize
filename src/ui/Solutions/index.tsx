@@ -99,7 +99,7 @@ export default function Solutions() {
                                 <p  className="text-start" style={{ color: "#000" }}>
                                 Quando se compreende de comércios, sabemos como podemos ajudar a administrar o seu negócio – nas compras, vendas, estoque, financeiro e obrigações fiscais, fazemos acontecer.
                                 Acompanhe o dia a dia com um software solução desenvolvida para atender diversas áreas capaz de se adaptar as atividades cotidianas. 
-                                Recurso ponto de venda PDV. Conte com um sistema fácil de usar, feito para você tornar o seu atendimento ágil, diminuir as filas e encantar os clientes. 
+                                Recurso ponto de venda PDV. Conte com um sistema fácil de usar, feito para você tornar o seu atendimento.
                                 </p>
                                 <a onClick={flipSecondCard} href="#">
                                     Voltar
@@ -129,7 +129,7 @@ export default function Solutions() {
                                 <p className="text-center" style={{ color: "#000" }}>
                                 Gerencie de qualquer lugar sua empresa obtenha dados, realize conciliação bancária emita documentos fiscais acompanhe as vendas.
                                 Automatize todos os fluxos operacionais da sua empresa e tenha processos internos dinâmicos e mais produtivos, deixando com que as pessoas foquem em gerar resultado para o seu negócio.
-                                Controle estoque vendas, cozinhas, financeiro contas a pagar receber, emissão de documentos fiscais, pedidos, delivery, cadastro diversos, ecommerce.
+                                Controle estoque vendas, cozinhas, financeiro contas a pagar receber.
                                 </p>
                                 <a onClick={flipThirdCard} href="#">
                                     Voltar
