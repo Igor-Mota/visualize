@@ -35,7 +35,7 @@ export default function Solutions() {
 
     return (
         <div id="solutions" className="p-4">
-            <h2 className="text-center">Nossas soluçoes</h2>
+            <h2 className="text-center">Nossas Soluções</h2>
             <h4 className="mt-3 mb-5 text-center">
                 Soluções ERP que tornem a sua empresa mais produtiva e com processos
                 mais autônomos.
