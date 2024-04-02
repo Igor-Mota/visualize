@@ -4,7 +4,7 @@ export default function OurServices() {
 
     return (
         <div id="Acode" className={styles.ourServices}>
-            <div className="container">
+            <div className="container mt-4">
                 <div className={styles.content}>
                     <div className={styles.title}>
                         <h2>A code</h2>
@@ -28,7 +28,7 @@ export default function OurServices() {
                             nossos clientes. Conte como nossa expertise para acompanhar todos
                             os processos das empresas{" "}
                         </p>
-                        <p>Trabalho mudanças e crescimentos</p>
+                        <p style={{color:'#0a45b5', fontWeight:'bold'}}>Trabalho mudanças e crescimentos</p>
                     </div>
                 </div>
             </div>
