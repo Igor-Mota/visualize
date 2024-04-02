@@ -47,8 +47,6 @@ export default function Footer() {
                             <Link href='#'>Segmento</Link>
                             <Link href='#'>Soluções</Link>
                             <Link href='#'>Code Sistemas</Link>
-                            <Link href='#'>Seja Revenda</Link>
-                            <Link href='#'>Contato</Link>
                         </div>
                         <div className={styles.menu}>
                             <p className={styles.title}>

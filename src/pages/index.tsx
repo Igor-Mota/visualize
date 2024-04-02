@@ -33,7 +33,6 @@ export default function Home() {
         <Community />
         <Plans />
         <Solutions />
-        <Plans />
         <Functionalities />
         <OurServices />
         <ACode />
