@@ -7,6 +7,7 @@ import Solutions from '@/ui/Solutions'
 import Community from '@/ui/Community'
 import Functionalities from '@/ui/Functionalities'
 import OurServices from '@/ui/OurServices'
+import ACode from '@/ui/ACode'
 import Footer from '@/ui/Footer'
 import Header from '@/ui/Header'
 
@@ -35,6 +36,7 @@ export default function Home() {
         <Plans />
         <Functionalities />
         <OurServices />
+        <ACode />
         <Footer />
 
       </main>

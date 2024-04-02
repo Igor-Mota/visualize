@@ -1,0 +1,45 @@
+.ourServices {
+    padding: calc(var(--padding) * 4);
+    form {
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 90%;
+            padding: var(--padding);
+            border-radius: 5px 0 0 5px;
+            border: 2px solid #eff1fe;
+            font-size: 16px;
+            transition: all .3s ease-in-out;
+            &:hover {
+                border-color: var(--primary-color);
+            }
+        }
+    }
+    .content {
+        .title {
+            text-align: center;
+            padding-bottom: calc(var(--padding) * 4);
+            p {
+                color: var(--third-color);
+            }
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            .image {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                img {
+                    max-width: 70%;
+                    object-fit: contain;
+                }
+            }
+            .accordion {
+                width: 50%;
+            }
+        }
+    }
+}
+
