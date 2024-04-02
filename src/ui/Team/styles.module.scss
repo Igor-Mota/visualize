@@ -1,0 +1,97 @@
+.team {
+    padding: calc(var(--padding) * 5) 0 calc(var(--padding) * 5);
+    margin-bottom: calc(var(--margin) * 5);
+    background-image: url('/images/bg-team.png');
+    background-repeat: no-repeat;
+    background-position: 95% 0%;
+    background-size: contain;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .contentText {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            h2 {
+                padding-bottom: calc(var(--padding) / 2);
+            }
+            p {
+                color: var(--third-color);
+            }
+        }
+        .bgImageJump {
+            position: relative;
+            width: 100%;
+            img {
+                border-radius: 100%;
+                width: 60px;
+                position: absolute;
+            }
+            &.left {
+                .imageOne {
+                    left: 18%;
+                    top: -100px;
+                }
+                .imageTwo {
+                    left: -26%;
+                    top: -26%;
+                }
+                .imageThree {
+                    left: -15%;
+                    top: 132px;
+                }
+                .imageFour {
+                    top: 200px;
+                    left: -32%;
+                }
+            }
+            &.right {
+                .imageOne {
+                    right: 18%;
+                    top: -100px;
+                }
+                .imageTwo {
+                    right: -26%;
+                    top: -26%;
+                }
+                .imageThree {
+                    right: -15%;
+                    top: 132px;
+                }
+                .imageFour {
+                    top: 200px;
+                    right: -32%;
+                }
+            }
+        }
+        .carousel {
+            width: 50%;
+            .card {
+                .cardHeader {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 80%;
+                        border-radius: 100%;
+                    }
+                }
+                .cardContent {
+                    h3 {
+                        font-weight: 600;
+                    }
+                    .function, p {
+                        color: var(--third-color);
+                    }
+                    .function {
+                        display: flex;
+                        padding: calc(var(--padding) / 2) 0 ;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@keyframes open-menu{
+    0%{height: 0;}
+    100%{height: 150px;}
+}
+@keyframes close-menu{
+    0%{height: 150px;}
+    100%{height: 0;}
+}
+
+@keyframes opacity-1{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+
+}
+@keyframes opacity-0{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+.opacity-1{
+    opacity: 1;
+    animation: opacity-1 0.5s ease-in;
+}
+.opacity-0{
+    opacity: 1;
+    animation: opacity-0 0.5s ease-in;
+}
+.open-menu{
+    height: 150px;
+    animation: open-menu 0.5s ease-in;
+}
+.close-menu {
+    height: 0;
+    animation: close-menu 0.5 ease-out;
+}
+.mobile-menu{
+    margin-left: 0.5rem;
+    opacity: 0.88;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius:4px;
+    width: 95% !important;
+    
+}
+
+.header {
+    padding: calc(var(--padding) / 1.2) 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--white-color);
+    z-index: 9;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navMenu {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            nav {
+                .listNav {
+                    display: flex;
+                    li {
+                        list-style: none;
+                        position: relative;
+                        margin: 0 var(--margin);
+                        .navLink {
+                            padding: var(--padding) 0;
+                            color: black;
+                            text-decoration: none;
+                            position: relative;
+                            &::before {
+                                transition: all .3s ease-out 0s;
+                                content: '';
+                                height: 2px;
+                                bottom: 0;
+                                left: 0;
+                                width: 0;
+                                position: absolute;
+                                background-color: var(--primary-color);
+                            }
+                        }
+                        .hoverNav {
+                            position: absolute;
+                            top: 70px;
+                            background-color: var(--white-color);
+                            display: flex;
+                            width: 500px;
+                            transition: all .3s ease-in-out;
+                            opacity: 0;
+                            visibility: hidden;
+                            padding: var(--padding);
+                            flex-wrap: wrap;
+                            border-radius: 5px;
+                            li {
+                                width: 32%;
+                                margin: 0;
+                                a {
+                                    padding: 0 var(--padding) calc(var(--padding) / 2);
+                                    color: black;
+                                    text-decoration: none;
+                                    position: relative;
+                                    display: flex;
+                                    transition: all .3s ease-in-out;
+                                    &:hover {
+                                        color: var(--primary-color);
+                                    }
+                                }
+                            }
+                        }
+                        &:hover {
+                            .hoverNav {
+                                top: 40px;
+                                opacity: 1;
+                                visibility: visible;
+                                box-shadow: -6px 17px 30px 0 rgba(0,0,0,.06);
+                            }
+                            .navLink {
+                                color: var(--primary-color);
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

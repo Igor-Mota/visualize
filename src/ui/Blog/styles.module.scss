@@ -1,0 +1,65 @@
+.blog {
+    padding: calc(var(--padding) * 3) 0;
+    .content {
+        .title {
+            text-align: center;
+            padding-bottom: calc(var(--padding) * 3);
+            h2 {
+                padding-bottom: calc(var(--padding) / 1.5);
+            }
+            p {
+                color: var(--third-color);
+            }
+        }
+        .card {
+            border: 1px solid #eff1fe;
+            border-radius: 5px;
+            padding: calc(var(--padding) / 2);
+            transition: all .3s ease-in-out;
+            .cardHeader {
+                position: relative;
+                .datePost {
+                    position: absolute;
+                    background-color: #313e5b;
+                    top: 10px;
+                    left: 10px;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    padding: 2px 10px;
+                    transition: all .3s ease-in-out;
+                    a {
+                        transition: all .3s ease-in-out;
+                        text-decoration: none;
+                        color: #8e989f;
+                    }
+                    &:hover {
+                        background-color: #1230c6;
+                        a {
+                            color: var(--white-color);
+                        }
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    object-fit: contain;
+                }
+            }
+            .cardContent {
+                padding: var(--padding);
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: black;
+                    display: flex;
+                    padding-bottom: calc(var(--padding) / 2);
+                }
+                p {
+                    color: var(--third-color);
+                }
+            }
+            &:hover {
+                box-shadow: -6px 17px 30px 0 rgba(0,0,0,.06);
+            }
+        }
+    }
+}

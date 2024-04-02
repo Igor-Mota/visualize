@@ -1,0 +1,62 @@
+.accordionOurServices {
+    .p-accordion-tab {
+        box-shadow: 0 20px 50px 0 rgba(0,0,0,.05);
+        margin-bottom: var(--margin);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 3px;
+            height: 40px;
+            background-color: var(--primary-color);
+            left: 0;
+            transition: all .3s ease-in-out;
+            
+        }
+        &:hover {
+            &::before {
+                height: 50px;
+            }
+        }
+        .p-accordion-header {
+            .p-accordion-header-link {
+                background: transparent !important; 
+                border: 0;
+                position: relative;
+                .p-accordion-toggle-icon {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                    border: 0;
+                    box-shadow: unset;
+                }
+                
+            }
+        }
+        .p-toggleable-content {
+            .p-accordion-content {
+                border: 0;
+                padding-top: 0;
+                p {
+                    color: var(--third-color);
+                }
+            }
+        }
+        &.p-accordion-tab-active {
+            box-shadow: 0 29px 60px 0 rgba(19,160,251,.15);
+            &::before {
+                z-index: 2; 
+                height: 80%;
+            }
+            .p-accordion-header {
+                .p-accordion-header-link {
+                    background-color: var(--white-color) !important;
+                }
+            }
+        }
+    }
+}

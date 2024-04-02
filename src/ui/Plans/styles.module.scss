@@ -1,0 +1,87 @@
+.plans {
+    margin: calc(var(--margin) * 4);
+    .content {
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .image {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .contentText {
+                position: relative;
+                display: flex;
+                .value {
+                    margin-right: 30px;
+                    min-width: 80px;
+                    height: 80px;
+                    line-height: 80px;
+                    color: #fff;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 30px;
+                    &::before {
+                        border-radius: 90px;
+                        border-top-left-radius: 90px;
+                        line-height: 80px;
+                        width: 80px;
+                        height: 80px;
+                        text-align: center;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: -1;
+                        opacity: .8;
+                        transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                        -ms-transition: all .5s ease-in-out;
+                        -o-transition: all .5s ease-in-out;
+                        -webkit-transition: all .5s ease-in-out;
+                        border-top-left-radius: 0;
+                    }
+                    &.starter {
+                        &::before {
+                            background-image: -webkit-linear-gradient(90deg,#879afb,#1733c3);
+                        }
+                    }
+                    &.deluxe {
+                        &::before {
+                            background-image: -webkit-linear-gradient(90deg,#e6a6a0,#ff6a5c);
+                        }
+                    }
+                    &.ultimate {
+                        &::before {
+                            
+                            background-image: -webkit-linear-gradient(90deg,#95efda,#64d8be);
+                        }
+                    }
+                }
+                .text {
+                    p {
+                        color: var(--third-color);
+                        padding: calc(var(--padding) / 2) 0 ;
+                    }
+                    ul {
+                        padding: 0 0 var(--padding) calc(var(--padding) * 2);
+                        list-style: none;
+                        p {
+                            color: black;
+                            padding: calc(var(--padding) / 2) 0 ;
+                        }
+                    }
+                }
+            }
+        }
+        .line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

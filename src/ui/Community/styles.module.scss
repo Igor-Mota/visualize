@@ -1,0 +1,70 @@
+.community {
+    padding-bottom: calc(var(--padding) * 4);
+    .content {
+        .title {
+            text-align: center;
+            p {
+                color: var(--third-color);
+            }
+        }
+        .list {
+            display: flex;
+            justify-content: space-around;
+            padding-top: calc(var(--padding) * 4);
+            .card {
+                display: flex;
+                align-items: center;
+                padding: calc(var(--padding) * 1.2) calc(var(--padding) * 3);
+                width: 23%;
+                justify-content: center;
+                p {
+                    color: black;
+                    &:first-child {
+                        font-size: 35px;
+                    }
+                }
+                span {
+                    position: relative;
+                    background: #000;
+                    height: 2px;
+                    width: 30px;
+                    overflow: hidden;
+                    margin: 0 calc(var(--margin) / 1.5);
+                    &::before, &::after {
+                        content: "";
+                        position: absolute;
+                        background: #fff;
+                        width: 3px;
+                        height: 2px;
+                        left: 0;
+                        z-index: 1;
+                        animation-duration: 3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-name: communityEffect;
+                    }
+                }
+                &:nth-child(1) {
+                    background-color: rgb(224, 247, 242);
+                }
+                &:nth-child(2) {
+                    background-color: rgb(255, 233, 231);
+                }
+                &:nth-child(3) {
+                    background-color: rgb(220, 225, 246);
+                }
+            }
+            
+        }
+    }
+}
+
+
+@keyframes communityEffect {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(60px);
+    }
+}
