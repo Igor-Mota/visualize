@@ -9,7 +9,7 @@ export default function Footer() {
         {
             id: '1',
             text: 'Contamos com uma rede completa, nos adaptamos às necessidades de nossos clientes. Conte como nossa expertise para acompanhar todos os processos das empresas',
-            name: 'Edmila Fernandes',
+            name: '',
             function: 'CEO Code Sistemas'
         }
     ])
@@ -50,16 +50,15 @@ export default function Footer() {
                             <Link href='#'>Seja Revenda</Link>
                             <Link href='#'>Contato</Link>
                         </div>
-                        {/*<div className={styles.menu}>
+                        <div className={styles.menu}>
                             <p className={styles.title}>
-                                About Us
+                                Contato
                             </p>
-                            <Link href='#'>About Sofbox</Link>
-                            <Link href='#'>Roadmap</Link>
-                            <Link href='#'>How it Work</Link>
-                            <Link href='#'>Team</Link>
-                            <Link href='#'>News</Link>
-                        </div>*/}
+                            <p>contato@codesistemas.com.br</p>
+                            <p>31 3132-5566 </p>
+                            <p>31 93144260</p>
+
+                        </div>
                         <div className={styles.comments}>
                             <Swiper
                                 spaceBetween={50}
