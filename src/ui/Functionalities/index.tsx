@@ -34,7 +34,7 @@ export default function Functionalities() {
                                 className={`${styles.card} card  `}
                                 onClick={() => handleChangeTab(1)}
                             >
-                                <h6>Planos Sistema ERP</h6>
+                                <h6 style={{fontSize:22}} >Planos Sistema ERP</h6>
 
                                 <Image
                                     src="/images/func1.jpg"
@@ -62,7 +62,7 @@ export default function Functionalities() {
                                 className={`${styles.card} card `}
                                 onClick={() => handleChangeTab(2)}
                             >
-                                <h6>Contrate o nosso Sistema ERP</h6>
+                                <h6 style={{fontSize:22}}>Contrate o nosso Sistema ERP</h6>
                                 <Image
                                     src="/images/funcs_bg.jpg"
                                     width={200}
