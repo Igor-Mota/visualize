@@ -4,12 +4,12 @@ export default function OurServices() {
 
     return (
         <div id="Acode" className={styles.ourServices}>
-            <div className="container mt-4">
+            <div className="container mt-5">
                 <div className={styles.content}>
                     <div className={styles.title}>
                         <h2>A code</h2>
                         <p>
-                            {" "}
+                        
                             Desde 2013, a Code Sistemas desenvolve e comercializa soluções
                             inovadoras para facilitar o gerenciamento de estabelecimentos
                             varejistas. Disponibilizamos sistemas totalmente integrados que
@@ -21,12 +21,12 @@ export default function OurServices() {
                             automotivas. Além disso, nossa equipe está sempre atenta às
                             tendências e mudanças do mercado para oferecer produtos que
                             atendam todas as suas necessidades, através de ferramentas ágeis e
-                            seguras.{" "}
+                            seguras.
                         </p>
                         <p>
                             Contamos com uma rede completa, nos adaptamos às necessidades de
                             nossos clientes. Conte como nossa expertise para acompanhar todos
-                            os processos das empresas{" "}
+                            os processos das empresas
                         </p>
                         <p style={{color:'#0a45b5', fontWeight:'bold'}}>Trabalho mudanças e crescimentos</p>
                     </div>
